@@ -6,3 +6,7 @@ function getFirstSelector(selector) {
 function nestedTarget() {
   return document.querySelector('div#nested .target')
 }
+
+function deepestChild() {
+  return document.querySelector('div#grand-node div div div div')
+}

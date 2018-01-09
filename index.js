@@ -12,13 +12,10 @@ function deepestChild() {
 }
 
 function increaseRankBy(n) {
-  var numbers = document.querySelector('.ranked-list');
+  var liNum = document.querySelector('.ranked-list li');
 
-  for (var i = 0; i < numbers.length; i++) {
-    var numbersChildren = numbers[i].children;
-
-    for (var j = 0; j < numbersChildren.length; j++) {
-      numbersChildren[j].innerHTML = parseInt(numbersChildren[j].innerHTML) + n
+  for (var i = 0; i < liNum.length; i++) {
+liNum[i].innerHTML=parseInt(liNum[i].innerHTML)+n;
     }
 }
-}
+

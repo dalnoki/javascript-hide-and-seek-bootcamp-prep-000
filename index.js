@@ -22,3 +22,4 @@ function increaseRankBy(n) {
       numberChildren[j].innerHTML = parseInt(numberChildren[j].innerHTML) + n
     }
 }
+}

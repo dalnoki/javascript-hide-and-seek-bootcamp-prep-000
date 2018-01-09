@@ -12,10 +12,9 @@ function deepestChild() {
 }
 
 function increaseRankBy(n) {
-  var liNum = document.querySelector('.ranked-list li');
+  var liNum = document.getElementById("app").querySelectorAll("ul.ranked-list li")
 
   for (var i = 0; i < liNum.length; i++) {
 liNum[i].innerHTML=parseInt(liNum[i].innerHTML)+n;
     }
 }
-

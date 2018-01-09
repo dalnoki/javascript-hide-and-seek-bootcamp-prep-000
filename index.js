@@ -1,23 +1,23 @@
 function getFirstSelector(selector) {
 
-  return document.querySelector(selector)
+  return document.querySelector(selector);
 }
 
 function nestedTarget() {
-  return document.querySelector('div#nested .target')
+  return document.querySelector('div#nested .target');
 }
 
 function deepestChild() {
-  return document.querySelector('div#grand-node div div div div')
+  return document.querySelector('div#grand-node div div div div');
 }
 
 function increaseRankBy(n) {
-  const numbers = document.querySelector('.ranked-list')
+  var numbers = document.querySelector('.ranked-list');
 
-  for (let i = 0; i < numbers.length; i++) {
-    let numbersChildren = numbers[i].children
+  for (var i = 0; i < numbers.length; i++) {
+    var numbersChildren = numbers[i].children;
 
-    for (let j = 0; j < numberChildren; j++) {
+    for (var j = 0; j < numbersChildren; j++) {
       numbersChildren[j].innerHTML = parseInt(numbersChildren[j].innerHTML) + n
     }
 }
